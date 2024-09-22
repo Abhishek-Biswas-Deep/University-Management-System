@@ -27,7 +27,6 @@ The assignment focuses on using Java Collections Framework (JCF) to represent an
 
 #### Getting Started
 To run this project:
-1. Ensure you have Java Development Kit (JDK) installed on your system.
-2. Clone this repository to your local machine.
-3. Open the project in your preferred Java IDE (e.g., IntelliJ IDEA).
-4. Compile and run the main class (not provided in the given files).
+1. Clone this repository.
+2. Open the project in your preferred Java IDE (e.g., IntelliJ IDEA).
+3. Compile and run.
