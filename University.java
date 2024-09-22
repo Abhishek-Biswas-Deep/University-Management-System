@@ -6,10 +6,6 @@ import java.util.*;
  * The university class will maintain an index of students and courses using Maps.
  *   - The keys for the students' map is the Student's ID
  *   - The keys for the courses' map is the Course's Code
- *
- * Your task in this class is to finish the constructor and implement the methods flagged with TODO.
- * I've [Juliano] moved all methods already implemented under the ones you have to implement.
- * You can re-organize the code if you want.
  */
 public class University {
     private Map<Integer, Student> studentBody;
@@ -31,8 +27,6 @@ public class University {
      * @return true if the student was added, false if the student was already on the map
      */
     public boolean addStudent(Student student){
-        //TODO: Implement the method according to the javadoc
-
         //The if is checking if the student was already in the registered course.
         //The if is also checking the id number and then false is returned if the student's id number is already registered.
         //The else is activated if the if condition fails.
@@ -51,7 +45,6 @@ public class University {
      * @return the student object or null if not found
      */
     public Student getStudent(int idNumber){
-        //TODO: Implement this getter
         //Here the student's id number is returned.
         //Here it is checking the student and also null is returned if the student is not found.
         return studentBody.get(idNumber);
@@ -66,7 +59,6 @@ public class University {
      * @return A list of all students (the list will be empty if the university is empty)
      */
     public List<Student> getStudents(){
-        //TODO: Implement this method
 
         //Here the whole list of students are returned.
         Set<Integer> set = studentBody.keySet();
@@ -89,7 +81,6 @@ public class University {
      * @return true if the course was added, false if the course was already on the university
      */
     public boolean addCourse(Course course){
-        //TODO: Implement this method according to the javadocs
 
         //The if is checking if the courses are available or not.
         //If the course was present in the university before, then false is returned.
@@ -110,7 +101,6 @@ public class University {
      * @return false if either the courseID or preReqCourseID are invalid, true after adding the pre-requisite
      */
     public boolean addRequisiteToCourse(String courseID, String preReqCourseID){
-        //TODO: Implement this method
 
         //The courses are firstly added if the courses or pre-requisite is not valid.
         //Then true is returned.
@@ -131,7 +121,6 @@ public class University {
      * @return the course object associated with the code or null if not found
      */
     public Course getCourse(String courseCode){
-        //TODO: implement this method
         //The course is being checked.
         //The course is returned and null if the course is not present.
         return availableCourses.get(courseCode);
@@ -146,7 +135,6 @@ public class University {
      * @return the list of courses offered by the university
      */
     public List<Course> getCourses(){
-        //TODO: Implement this method
 
         //Here the whole list of courses are returned.
         Set<String> set = availableCourses.keySet();
@@ -179,7 +167,6 @@ public class University {
      *        exceptions (throw an exception) for the wrong id and code problems.
      */
     public boolean enrollStudentInCourse(int studentID, String courseCode){
-        //TODO: Implement this method
 
         //Here the courses and studentID are added using HashSet and List.
         if(studentBody.containsKey(studentID) && availableCourses.containsKey(courseCode)) {
@@ -213,7 +200,6 @@ public class University {
      *        true if the student was removed from the course.
      */
     public boolean removeStudentFromCourse(int studentID, String courseCode){
-        //TODO: Implement this method
 
         //Here the courses are added using HashSet.
         if(studentBody.containsKey(studentID) && availableCourses.containsKey(courseCode)) {
@@ -252,7 +238,6 @@ public class University {
      * @return false if the studentID is not in the index. True if the student was removed from the index and courses
      */
     public boolean removeStudentFromUniversity(int studentID){
-        //TODO: Implement this method
 
         //Here the Student object is declared.
         Student student = studentBody.get(studentID);
@@ -284,7 +269,6 @@ public class University {
      * @return false if the course code does not match any offered course. True after the course was removed
      */
     public boolean removeCourseFromUniversity(String courseCode){
-        //TODO: Implement this method
 
         //Here Course object is called.
         Course course = availableCourses.get(courseCode);
