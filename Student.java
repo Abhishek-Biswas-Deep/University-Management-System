@@ -16,7 +16,6 @@ import java.util.*;
 public class Student implements Serializable {
     private String name;
     private int idNumber;
-    //TODO: Choose a type for the enrolledCourses and previousCourses variables
 
     //Here the variable 'enrolledCourses' and 'previousCourses' are used.
     private HashSet<Course> enrolledCourses; //The variable 'enrolledCourses' means the courses that are already registered.
@@ -29,7 +28,6 @@ public class Student implements Serializable {
      * @param idNumber The student's idNumber, between 0 and 999999
      */
     public Student(String name, int idNumber) {
-        //TODO: Initialize the collection variables here
         this.name = name;
         this.idNumber = idNumber;
 
@@ -51,8 +49,6 @@ public class Student implements Serializable {
      * @return the student's courses.
      */
     public HashSet<Course> getEnrolledCourses() {
-        //TODO: fix the return type after you've chosen the variable types
-
         //Here the variable 'courses' is used and is then returned.
         HashSet<Course> courses = enrolledCourses; //The courses are set to enrolled courses using HashSet.
         return courses;
@@ -63,8 +59,6 @@ public class Student implements Serializable {
      * @return the student's previous courses (PASS Mark)
      */
     public HashSet<Course> getPreviousCourses() {
-        //TODO: fix the return type after you've chosen the variable types
-
         //The courses are set to previous courses using HashSet.
         HashSet<Course> courses = previousCourses;
         return courses;
